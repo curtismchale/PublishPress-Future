@@ -8,6 +8,7 @@ class NoticeFacade {
     private $notices = [];
 
     private $initialized = false;
+    private $hooks;
 
     public function __construct(HookableInterface $hooksFacade)
     {
